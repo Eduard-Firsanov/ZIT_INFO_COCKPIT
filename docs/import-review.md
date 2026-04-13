@@ -17,3 +17,8 @@ Der lokale Stand ist als initialer abapGit-Import in das GitHub-Repository geeig
 
 - Ein fachlicher ABAP-Syntaxcheck ist lokal ausserhalb des SAP-Systems nicht moeglich
 - Eventuelle Systemabhaengigkeiten muessen beim Import im Zielsystem geprueft werden
+
+## Folgeunterlagen
+
+- Detaillierte Risikoanalyse: `docs/abhaengigkeiten-risiken.md`
+- Konkrete Import-Checkliste: `docs/abapgit-import-checkliste.md`
