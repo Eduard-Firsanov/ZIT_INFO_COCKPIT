@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_INFOCOCKPIT_SERVICES</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Service Klasse für Info-Portal</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_KOMMUNIKDATEN_LIEFERANT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Kommunkatinsdaten von Lieferant zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SENDE_INFOMAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_KOMMUNIKDATEN_LIEFERANT</CMPNAME>
+     <SCONAME>ED_SMTP_ADDR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>E-Mail-Adresse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_KOMMUNIKDATEN_LIEFERANT</CMPNAME>
+     <SCONAME>ED_TELF1</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>1. Telefonnummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_KOMMUNIKDATEN_LIEFERANT</CMPNAME>
+     <SCONAME>ED_TELFX</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Telefaxnummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_KOMMUNIKDATEN_LIEFERANT</CMPNAME>
+     <SCONAME>ID_LIFNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kontonummer des Lieferanten bzw. Kreditors</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IS_INFO_CONTEXT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Info Email Context</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IS_INFO_ZUSATZ</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Info Context Zusatzdaten</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,14 @@
+PROCESS BEFORE OUTPUT.
+  MODULE status_0310.
+  MODULE pbo_0310.
+*
+PROCESS AFTER INPUT.
+  MODULE user_command_0200 AT EXIT-COMMAND.
+  CHAIN.
+    FIELD  gs_dynpro_ro_02-code
+    MODULE set_code_0310 ON INPUT.
+  ENDCHAIN.
+  MODULE pai_0310.
+
+*PROCESS ON VALUE-REQUEST.
+*  FIELD gs_dynpro_cn_01-code MODULE set_code.

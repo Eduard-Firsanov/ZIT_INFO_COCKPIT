@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZST_INFO_CONTEXT_ZUSATZ</TABNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Info Context</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>NEW_QMNUM</FIELDNAME>
+     <ROLLNAME>QMNUM</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLU-ZUS</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>/DATRAIN/KC_ST_ZUSATZ_08</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>KC: Zusatzinformationen für Meldung</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>S_ZUSATZ</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLU-PAR</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>/DATRAIN/KC_ST_PARTNER_08</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>KC: Partnerdaten</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>S_PARTNER</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZST_RECN</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Vertragsdaten</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>S_RECN</GROUPNAME>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

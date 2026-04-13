@@ -1,0 +1,34 @@
+
+PROCESS BEFORE OUTPUT.
+
+  MODULE init_edit_control_9500.
+  MODULE get_data_9500.
+  MODULE status_9500.
+
+*&SPWIZARD: PBO FLOW LOGIC FOR TABLECONTROL 'GX_9500'
+  MODULE gx_9500_change_tc_attr.
+*&SPWIZARD: MODULE GX_9500_CHANGE_COL_ATTR.
+  LOOP AT   gt_filetable
+       INTO gs_filetable
+       WITH CONTROL gx_9500
+       CURSOR gx_9500-current_line.
+*&SPWIZARD:   MODULE GX_9500_CHANGE_FIELD_ATTR
+  ENDLOOP.
+
+
+PROCESS AFTER INPUT.
+*&SPWIZARD: PAI FLOW LOGIC FOR TABLECONTROL 'GX_9500'
+  LOOP AT gt_filetable.
+    CHAIN.
+      FIELD gs_filetable-filename.
+      FIELD gs_filetable-erdat.
+    ENDCHAIN.
+    FIELD gs_filetable-mark
+      MODULE gx_9500_mark ON REQUEST.
+  ENDLOOP.
+*&SPWIZARD: MODULE GX_9500_CHANGE_TC_ATTR.
+*&SPWIZARD: MODULE GX_9500_CHANGE_COL_ATTR.
+
+  MODULE exit_9500 AT EXIT-COMMAND.
+
+  MODULE user_command_9500.

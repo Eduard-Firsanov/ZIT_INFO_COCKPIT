@@ -1,0 +1,8 @@
+PROCESS BEFORE OUTPUT.
+* MODULE STATUS_0602.
+  MODULE pbo_0410.
+  MODULE modify_screen_0412.
+  MODULE modify_screen_0510.
+
+PROCESS AFTER INPUT.
+* CALL SUBSCREEN sub_condition.
